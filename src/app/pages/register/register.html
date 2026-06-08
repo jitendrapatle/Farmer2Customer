@@ -1,0 +1,82 @@
+<div class="card" style="max-width:480px;margin:40px auto;">
+    <div class="card-header">
+        <h5 class="card-title"><i class="bi bi-person-plus me-2"></i>Create Account</h5>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="registerForm">
+
+
+            <p style="color:var(--muted);font-size:0.88rem;margin-bottom:16px;">Join as a Farmer or Customer</p>
+            <label class="form-label">I want to join as</label>
+            <div class="role-selector mb-3">
+                @for (role of RolseList(); track role.roleId) {
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" formControlName="roleId"   type="radio" [id]="'role-'+role.roleId"
+                        [value]="role.roleId">
+                    <label class="form-check-label" [for]="'role-'+role.roleId"> {{ role.roleName }} </label>
+                </div>
+
+                }
+
+
+            </div>
+            <div class="row g-3 mb-3">
+                <div class="col-6">
+                    <label class="form-label">Name</label>
+                    <input formControlName="name" type="text" class="form-control" placeholder="Rajesh" />
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input formControlName="email" type="email" class="form-control" placeholder="you@example.com" />
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 mb-3">
+                <div class="col-6">
+                <label class="form-label">Phone Number</label>
+                <input formControlName="phone" type="tel" class="form-control" placeholder="+91 98765 43210" />
+            
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Address</label>
+                <input formControlName="address" type="text" class="form-control" placeholder="Enter your address" />
+                    </div>
+            </div>
+             
+            <div class="mb-3">
+                <label class="form-label">City</label>
+                <input formControlName="city" type="text" class="form-control" placeholder="Enter your city" />
+            </div> 
+            <div class="row g-3 mb-3">
+                <div class="col-6">
+                    <label class="form-label">Password</label>
+                    <input type="password" formControlName="password" class="form-control" placeholder="Create a strong password" />
+                </div>
+                <div class="col-6">
+                    <label class="form-label">Confirm Password</label>
+                    <input type="password" formControlName="confirmPassword" class="form-control" placeholder="Confirm your password" />
+                @if(registerForm.errors?.['passwordMismatch']
+                    && registerForm.get('confirmPassword')?.touched) {
+
+                <div class="text-danger">
+                    Passwords do not match.
+                </div>
+            } 
+                </div>
+            </div> 
+             
+            <button [disabled]="isRegistering()" class="btn-primary-custom" (click)="onRegister()">
+                <span *ngIf="!isRegistering();">Create Account</span>
+                <span *ngIf="isRegistering()">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Creating Account...
+                </span>
+
+            </button>
+            <div class="text-center mt-3" style="font-size:0.87rem;color:var(--muted)">
+                Already have an account? <a href="#" class="link-green" >Sign in</a>
+            </div>
+        </form>
+    </div>
+</div>

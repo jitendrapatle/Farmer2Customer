@@ -1,0 +1,375 @@
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 position-relative" style="z-index:1">
+        <div class="mb-3">
+          <span style="background:rgba(246,194,68,0.2);color:var(--accent);padding:5px 14px;border-radius:50px;font-size:0.82rem;font-weight:700;border:1px solid rgba(246,194,68,0.35);">
+            <i class="bi bi-patch-check-fill me-1"></i> 100% Fresh from Farm
+          </span>
+        </div>
+        <h1>Buy Fresh Produce<br>Direct from <span>Farmers</span></h1>
+        <p class="mt-3 mb-4">Skip the middleman. Shop fresh vegetables, fruits &amp; grains directly from verified local farmers at honest prices.</p>
+        <div class="search-bar mb-4">
+          <i class="bi bi-search text-muted me-2"></i>
+          <input type="text" placeholder="Search for potatoes, tomatoes, rice..." />
+          <button>Search</button>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+          <span style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);padding:4px 12px;border-radius:50px;font-size:0.8rem;">Vegetables</span>
+          <span style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);padding:4px 12px;border-radius:50px;font-size:0.8rem;">Fruits</span>
+          <span style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);padding:4px 12px;border-radius:50px;font-size:0.8rem;">Grains</span>
+          <span style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);padding:4px 12px;border-radius:50px;font-size:0.8rem;">Dairy</span>
+        </div>
+        <div class="row g-3 mt-4">
+          <div class="col-4"><div class="stat-badge"><div class="num">1.2k+</div><div class="lbl">Farmers</div></div></div>
+          <div class="col-4"><div class="stat-badge"><div class="num">8k+</div><div class="lbl">Products</div></div></div>
+          <div class="col-4"><div class="stat-badge"><div class="num">25k+</div><div class="lbl">Customers</div></div></div>
+        </div>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block position-relative" style="z-index:1">
+        <img src="https://images.pexels.com/photos/1300972/pexels-photo-1300972.jpeg?auto=compress&w=700" alt="Fresh produce" class="hero-img" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section-py-sm bg-section">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+      <h2 class="section-title mb-0">Browse Categories</h2>
+      <a href="#" class="link-green" style="font-size:0.9rem;">View all <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="d-flex flex-wrap gap-2">
+      <div class="category-pill active">All</div>
+      <div class="category-pill">Vegetables</div>
+      <div class="category-pill">Fruits</div>
+      <div class="category-pill">Grains &amp; Pulses</div>
+      <div class="category-pill">Dairy</div>
+      <div class="category-pill">Herbs</div>
+      <div class="category-pill">Eggs &amp; Poultry</div>
+      <div class="category-pill">Honey &amp; Spices</div>
+      <div class="category-pill">Organic</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS + FILTERS -->
+<section class="section-py" style="background:var(--bg)">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Filters Sidebar -->
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="filter-panel">
+          <h6><i class="bi bi-funnel me-2 text-success"></i>Filter Products</h6>
+          <hr class="my-2" />
+          <h6 class="mt-3">Price Range</h6>
+          <input type="range" class="form-range" min="0" max="500" value="250" />
+          <div class="d-flex justify-content-between" style="font-size:0.8rem;color:var(--muted)"><span>Rs 0</span><span>Rs 500/kg</span></div>
+          <h6 class="mt-3">Farmer Location</h6>
+          <div class="mb-2"><input class="form-check-input me-2" type="checkbox" /> <label style="font-size:0.85rem;">Maharashtra</label></div>
+          <div class="mb-2"><input class="form-check-input me-2" type="checkbox" checked /> <label style="font-size:0.85rem;">Punjab</label></div>
+          <div class="mb-2"><input class="form-check-input me-2" type="checkbox" /> <label style="font-size:0.85rem;">Karnataka</label></div>
+          <div class="mb-2"><input class="form-check-input me-2" type="checkbox" /> <label style="font-size:0.85rem;">Uttar Pradesh</label></div>
+          <h6 class="mt-3">Product Type</h6>
+          <div class="mb-2"><input class="form-check-input me-2" type="checkbox" checked /> <label style="font-size:0.85rem;">Organic</label></div>
+          <div class="mb-2"><input class="form-check-input me-2" type="checkbox" /> <label style="font-size:0.85rem;">Conventional</label></div>
+          <h6 class="mt-3">Sort By</h6>
+          <select class="form-control" style="font-size:0.87rem;">
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest First</option>
+            <option>Best Rated</option>
+          </select>
+          <button class="btn-primary-custom mt-3" style="padding:9px;">Apply Filters</button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="col-lg-9">
+        <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
+          <p class="mb-0" style="color:var(--muted);font-size:0.9rem;">Showing <strong style="color:var(--text)">24 products</strong></p>
+          <div class="d-flex gap-2">
+            <button class="btn btn-sm" style="border:1.5px solid var(--border);border-radius:8px;font-size:0.83rem;background:#fff"><i class="bi bi-grid"></i></button>
+            <button class="btn btn-sm" style="border:1.5px solid var(--border);border-radius:8px;font-size:0.83rem;background:#fff"><i class="bi bi-list-ul"></i></button>
+          </div>
+        </div>
+        <div class="row g-3">
+
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <img src="https://images.pexels.com/photos/144248/potatoes-vegetables-erdfrucht-bio-144248.jpeg?auto=compress&w=400" alt="Potato" class="product-img" />
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start mb-1">
+                  <h6 class="product-name mb-0">Desi Aloo (Potato)</h6>
+                  <span class="badge-organic">Organic</span>
+                </div>
+                <div class="farmer-tag"><div class="farmer-avatar-sm">RS</div>Rajesh Singh · Punjab</div>
+                <div class="rating mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> <span class="text-muted">(128)</span></div>
+                <div class="price-row">
+                  <div class="price">Rs 28 <span>/ kg</span></div>
+                  <button class="add-cart-btn"><i class="bi bi-cart-plus me-1"></i>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <img src="https://images.pexels.com/photos/533280/pexels-photo-533280.jpeg?auto=compress&w=400" alt="Tomato" class="product-img" />
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start mb-1">
+                  <h6 class="product-name mb-0">Fresh Tomatoes</h6>
+                  <span class="badge-fresh">Fresh</span>
+                </div>
+                <div class="farmer-tag"><div class="farmer-avatar-sm">AM</div>Anita Malhotra · Maharashtra</div>
+                <div class="rating mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i> <span class="text-muted">(94)</span></div>
+                <div class="price-row">
+                  <div class="price">Rs 35 <span>/ kg</span></div>
+                  <button class="add-cart-btn"><i class="bi bi-cart-plus me-1"></i>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <img src="https://images.pexels.com/photos/1306558/pexels-photo-1306558.jpeg?auto=compress&w=400" alt="Carrots" class="product-img" />
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start mb-1">
+                  <h6 class="product-name mb-0">Orange Carrots</h6>
+                  <span class="badge-organic">Organic</span>
+                </div>
+                <div class="farmer-tag"><div class="farmer-avatar-sm">VK</div>Vikram Kumar · Karnataka</div>
+                <div class="rating mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span class="text-muted">(207)</span></div>
+                <div class="price-row">
+                  <div class="price">Rs 42 <span>/ kg</span></div>
+                  <button class="add-cart-btn"><i class="bi bi-cart-plus me-1"></i>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <img src="https://images.pexels.com/photos/1508666/pexels-photo-1508666.jpeg?auto=compress&w=400" alt="Onions" class="product-img" />
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start mb-1">
+                  <h6 class="product-name mb-0">Red Onions</h6>
+                  <span class="badge-fresh">Fresh</span>
+                </div>
+                <div class="farmer-tag"><div class="farmer-avatar-sm">SP</div>Suresh Patil · Maharashtra</div>
+                <div class="rating mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> <span class="text-muted">(56)</span></div>
+                <div class="price-row">
+                  <div class="price">Rs 22 <span>/ kg</span></div>
+                  <button class="add-cart-btn"><i class="bi bi-cart-plus me-1"></i>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <img src="https://images.pexels.com/photos/2518893/pexels-photo-2518893.jpeg?auto=compress&w=400" alt="Spinach" class="product-img" />
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start mb-1">
+                  <h6 class="product-name mb-0">Baby Spinach</h6>
+                  <span class="badge-organic">Organic</span>
+                </div>
+                <div class="farmer-tag"><div class="farmer-avatar-sm">ML</div>Meera Lal · Haryana</div>
+                <div class="rating mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i> <span class="text-muted">(83)</span></div>
+                <div class="price-row">
+                  <div class="price">Rs 55 <span>/ kg</span></div>
+                  <button class="add-cart-btn"><i class="bi bi-cart-plus me-1"></i>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <img src="https://images.pexels.com/photos/2254954/pexels-photo-2254954.jpeg?auto=compress&w=400" alt="Apples" class="product-img" />
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start mb-1">
+                  <h6 class="product-name mb-0">Kashmir Apples</h6>
+                  <span class="badge-fresh">Fresh</span>
+                </div>
+                <div class="farmer-tag"><div class="farmer-avatar-sm">GN</div>Ghulam Nabi · J&amp;K</div>
+                <div class="rating mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span class="text-muted">(312)</span></div>
+                <div class="price-row">
+                  <div class="price">Rs 120 <span>/ kg</span></div>
+                  <button class="add-cart-btn"><i class="bi bi-cart-plus me-1"></i>Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+          <nav><ul class="pagination">
+            <li class="page-item disabled"><a class="page-link">&#8249;</a></li>
+            <li class="page-item active"><a class="page-link" style="background:var(--primary);border-color:var(--primary)">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">&#8250;</a></li>
+          </ul></nav>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED FARMERS -->
+<section class="section-py bg-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Meet Our Farmers</h2>
+      <p style="color:var(--muted);font-size:0.95rem;">Verified &amp; trusted farmers growing fresh produce near you</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="farmer-card">
+          <img src="https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?auto=compress&w=200" alt="Farmer" class="farmer-avatar" />
+          <div class="farmer-name">Rajesh Singh</div>
+          <div class="farmer-loc"><i class="bi bi-geo-alt me-1"></i>Amritsar, Punjab</div>
+          <div class="farmer-products mt-2">24 Products</div>
+          <div class="rating mt-1"><i class="bi bi-star-fill"></i> 4.8</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="farmer-card">
+          <img src="https://images.pexels.com/photos/5378751/pexels-photo-5378751.jpeg?auto=compress&w=200" alt="Farmer" class="farmer-avatar" />
+          <div class="farmer-name">Anita Malhotra</div>
+          <div class="farmer-loc"><i class="bi bi-geo-alt me-1"></i>Nashik, Maharashtra</div>
+          <div class="farmer-products mt-2">18 Products</div>
+          <div class="rating mt-1"><i class="bi bi-star-fill"></i> 4.6</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="farmer-card">
+          <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&w=200" alt="Farmer" class="farmer-avatar" />
+          <div class="farmer-name">Vikram Kumar</div>
+          <div class="farmer-loc"><i class="bi bi-geo-alt me-1"></i>Mysore, Karnataka</div>
+          <div class="farmer-products mt-2">31 Products</div>
+          <div class="rating mt-1"><i class="bi bi-star-fill"></i> 4.9</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="farmer-card">
+          <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&w=200" alt="Farmer" class="farmer-avatar" />
+          <div class="farmer-name">Sunita Devi</div>
+          <div class="farmer-loc"><i class="bi bi-geo-alt me-1"></i>Jaipur, Rajasthan</div>
+          <div class="farmer-products mt-2">15 Products</div>
+          <div class="rating mt-1"><i class="bi bi-star-fill"></i> 4.7</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section-py" style="background:var(--bg)">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">How It Works</h2>
+      <p style="color:var(--muted);font-size:0.95rem;">Simple steps to get farm-fresh produce at your doorstep</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-md-3"><div class="how-step"><div class="step-icon"><i class="bi bi-search"></i></div><div class="step-title">Browse Products</div><div class="step-desc">Search and filter fresh produce from verified farmers</div></div></div>
+      <div class="col-6 col-md-3"><div class="how-step"><div class="step-icon"><i class="bi bi-cart-check"></i></div><div class="step-title">Add to Cart</div><div class="step-desc">Select quantity and add items from multiple farmers</div></div></div>
+      <div class="col-6 col-md-3"><div class="how-step"><div class="step-icon"><i class="bi bi-credit-card"></i></div><div class="step-title">Secure Payment</div><div class="step-desc">Pay securely — orders routed directly to each farmer</div></div></div>
+      <div class="col-6 col-md-3"><div class="how-step"><div class="step-icon"><i class="bi bi-truck"></i></div><div class="step-title">Fast Delivery</div><div class="step-desc">Receive fresh produce delivered to your doorstep</div></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- LOGIN MODAL -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered" style="max-width:420px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><i class="bi bi-box-arrow-in-right me-2"></i>Welcome Back</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p style="color:var(--muted);font-size:0.88rem;margin-bottom:20px;">Sign in to continue to FarmDirect</p>
+        <div class="mb-3">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" placeholder="you@example.com" />
+        </div>
+        <div class="mb-3">
+          <div class="d-flex justify-content-between"><label class="form-label">Password</label><a href="#" class="link-green" style="font-size:0.82rem;">Forgot?</a></div>
+          <input type="password" class="form-control" placeholder="Enter password" />
+        </div>
+        <div class="d-flex align-items-center mb-3">
+          <input class="form-check-input me-2" type="checkbox" />
+          <label style="font-size:0.85rem;color:var(--muted)">Remember me</label>
+        </div>
+        <button class="btn-primary-custom">Sign In</button>
+        <div class="divider-text mt-3">or</div>
+        <div class="text-center" style="font-size:0.87rem;color:var(--muted)">
+          New to FarmDirect? <a href="#" class="link-green" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Create account</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- REGISTER MODAL -->
+<div class="modal fade" id="registerModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered" style="max-width:460px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><i class="bi bi-person-plus me-2"></i>Create Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p style="color:var(--muted);font-size:0.88rem;margin-bottom:16px;">Join as a Farmer or Customer</p>
+        <label class="form-label">I want to join as</label>
+        <div class="role-selector mb-3">
+          <div class="role-btn selected" onclick="this.parentElement.querySelectorAll('.role-btn').forEach(b=>b.classList.remove('selected'));this.classList.add('selected')">
+            <i class="bi bi-basket3"></i><span>Customer</span>
+          </div>
+          <div class="role-btn" onclick="this.parentElement.querySelectorAll('.role-btn').forEach(b=>b.classList.remove('selected'));this.classList.add('selected')">
+            <i class="bi bi-tree"></i><span>Farmer</span>
+          </div>
+        </div>
+        <div class="row g-3 mb-3">
+          <div class="col-6">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-control" placeholder="Rajesh" />
+          </div>
+          <div class="col-6">
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-control" placeholder="Singh" />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" placeholder="you@example.com" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" placeholder="+91 98765 43210" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" placeholder="Create a strong password" />
+        </div>
+        <div class="d-flex align-items-start mb-3">
+          <input class="form-check-input me-2 mt-1" type="checkbox" />
+          <label style="font-size:0.83rem;color:var(--muted)">I agree to the <a href="#" class="link-green">Terms</a> and <a href="#" class="link-green">Privacy Policy</a></label>
+        </div>
+        <button class="btn-primary-custom">Create Account</button>
+        <div class="text-center mt-3" style="font-size:0.87rem;color:var(--muted)">
+          Already have an account? <a href="#" class="link-green" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
