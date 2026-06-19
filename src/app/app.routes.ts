@@ -3,6 +3,12 @@ import { Category } from './pages/category/category';
 import { Farmers } from './pages/farmers/farmers';
 import { About } from './pages/about/about';
 import { Register } from './pages/register/register';
+import { Login } from './pages/login/login';
+import { Home } from './pages/home/home';
+import { MasterPage } from './pages/master-page/master-page';
+import { Products } from './pages/products/products';
+import { authGuard } from './core/guards/auth-guard';
+import { authSuperAdminGuard } from './core/guards/auth-super-admin-guard';
 
 export const routes: Routes = [
     {
@@ -12,11 +18,10 @@ export const routes: Routes = [
     },
     {
         path: 'home',
-        loadComponent: () => import('./pages/home/home').then(m => m.Home) 
-    },
+        component: Home},
     {
         path: 'login',
-        loadComponent: () => import('./pages/login/login').then(m => m.Login)   
+        component: Login   
     },
     {
         path: 'categories',
@@ -29,5 +34,14 @@ export const routes: Routes = [
     {
         path: 'register',
         component: Register
+    },
+    {
+        path: 'master',
+        component: MasterPage,
+        canActivate: [authGuard,authSuperAdminGuard]
+    },
+    {
+        path: 'products',
+        component: Products
     }
 ];

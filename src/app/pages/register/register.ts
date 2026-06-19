@@ -18,6 +18,10 @@ loginSrv = inject(LoginService)
   RolseList = signal<IRole[]>([])
   isRegistering = signal(false);
 
+  constructor(){
+    this.getRoles();
+
+  }
 
   registerForm : FormGroup = new FormGroup({
     name : new FormControl('',Validators.required),
@@ -32,7 +36,6 @@ loginSrv = inject(LoginService)
 
 )
   ngOnInit(): void {
-    this.getRoles();
     console.log(this.RolseList);
 
   }
@@ -42,8 +45,12 @@ loginSrv = inject(LoginService)
   getRoles(){
     this.masterSrv.getAllRoles().subscribe({
       next:(res:IRole[])=>{
+        console.log("All roles ",res);
         this.RolseList.set(res);
 
+      },
+      error:(error:any)=>{
+        console.log("Error fetching roles ",error);
       }
     })
   }
